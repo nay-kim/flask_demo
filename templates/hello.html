@@ -1,0 +1,35 @@
+<!doctype html>
+<title>Hello from Flask</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        border: solid 5px;
+        border-radius: 50px;
+        width: fit-content;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    h1 {
+        color: red;
+        margin: 0;
+    }
+
+</style>
+<body>
+<div class="container">
+    {% if name %}
+        <h1>Hello {{ name }}!</h1>
+    {% else %}
+        <h1>Hello, World!</h1>
+    {% endif %}
+</div>
+</body>
+
